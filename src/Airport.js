@@ -9,7 +9,6 @@ Airport.prototype.planes = function() {
 };
 
 Airport.prototype.clearForLanding = function(plane) {
-  console.log(this._weather.isStormy + 'line 12')
   if(this._weather.isStormy()) {
     throw new Error('cannot land during storm');
   }
@@ -17,7 +16,6 @@ Airport.prototype.clearForLanding = function(plane) {
 };
 
 Airport.prototype.clearForTakeOff = function(plane) {
-  console.log(this._weather.isStormy + 'line 20')
   if(this._weather.isStormy()) {
     throw new Error('cannot takeoff during storm');
   }
